@@ -72,7 +72,7 @@ Timer* Timer::instance()
 
 #else
 
-    #include <sys/time.h>
+    #include <times.h>
 
     Timer::Timer( void )
     {
@@ -81,7 +81,7 @@ Timer* Timer::instance()
         setStartTick();        
     }
 
-    Timer_t Timer::tick() const
+    Timer_t Timer::tick() constget
     {
         struct timeval tv;
         gettimeofday(&tv, NULL);

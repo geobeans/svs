@@ -11,7 +11,7 @@
  * OpenSceneGraph Public License for more details.
 */
 
-#include <OpenThreads/ScopedLock>
+#include <ScopedLock>
 #include <osg/ImageSequence>
 #include <osg/Notify>
 #include <osg/Camera>

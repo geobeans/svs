@@ -14,7 +14,7 @@
 #ifndef OSG_IMAGESEQUENCE
 #define OSG_IMAGESEQUENCE 1
 
-#include <OpenThreads/Mutex>
+#include <Mutex>
 #include <osg/ImageStream>
 #include <osg/StateAttribute>
 

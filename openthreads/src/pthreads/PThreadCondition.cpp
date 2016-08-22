@@ -21,9 +21,11 @@
 #  include <time.h>
 #else
 #  include <timers.h>
+#  include <sys/times.h>
 #endif
 
 #include <stdio.h>
+#include <TimerExt.h>
 
 #include <Condition>
 #include "PThreadConditionPrivateData.h"
@@ -160,33 +162,26 @@ int Condition::wait(Mutex *mutex, unsigned long int ms) {
 
     // wait time is now in ms milliseconds, so need to convert to seconds and nanoseconds for timespec strucuture.
     unsigned int sec = ms / 1000;
-    unsigned int nsec = (ms % 1000) * 1000000;
+	unsigned int nsec = (ms % 1000) * 1000000;
 
-    //使用clock_gettime函数代替gettimeofday，无gettimeofday函数声明因为
-    // add to the current time    
-    //struct timeval now;
-    //gettimeofday( &now, 0 );
+	// add to the current time    
+	struct timeval now;
+	gettimeofday( &now, 0 );
 
-    //sec += now.tv_sec;
-    //nsec += now.tv_usec*1000;
+	sec += now.tv_sec;
+	nsec += now.tv_usec*1000;
 
-    // now pass on any overflow from nsec onto seconds.
-    //sec += nsec / 1000000000;
-    //nsec = nsec % 1000000000;
+	// now pass on any overflow from nsec onto seconds.
+	sec += nsec / 1000000000;
+	nsec = nsec % 1000000000;
 
-    //struct timespec abstime;
-    //abstime.tv_sec = sec;
-    //abstime.tv_nsec = nsec;
+	struct timespec abstime;
+	abstime.tv_sec = sec;
+	abstime.tv_nsec = nsec;
 
-    struct timespec abstime;
-    clockid_t t_id = CLOCK_REALTIME;
-    clock_gettime(t_id,&abstime);
-    abstime.tv_sec += sec;
-    abstime.tv_nsec += nsec;
-    
-    int status;
+	int status;
 
-    pthread_cleanup_push(condition_cleanup_handler, &mpd->mutex);
+	pthread_cleanup_push(condition_cleanup_handler, &mpd->mutex);
 
     status = pthread_cond_timedwait( &pd->condition, &mpd->mutex, &abstime );
 
