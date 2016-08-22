@@ -1,0 +1,4 @@
+#Sun Aug 21 09:56:05 CST 2016
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=sched_setaffinity

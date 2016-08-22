@@ -1,0 +1,4 @@
+#Sun Aug 21 00:19:00 CST 2016
+com.windriver.ide.target.connectiontypes.defaultconnections.LinuxUsermodeAgentDefaultConnectionContributor.Mark.autoCreateDefaultConnection.Called=true
+com.windriver.ide.target.connectiontypes.defaultconnections.VxsimDefaultConnectionContributor.Mark.autoCreateDefaultConnection.Called=true
+eclipse.preferences.version=1

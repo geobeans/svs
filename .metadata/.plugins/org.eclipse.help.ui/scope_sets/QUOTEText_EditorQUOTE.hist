@@ -1,0 +1,4 @@
+#Sun Aug 21 22:40:59 CST 2016
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression="Text Editor"

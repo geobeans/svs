@@ -1,0 +1,26 @@
+# Coverage type flags
+-function=on
+-exit=off
+-block=on
+-decision=off
+-condition=off
+-mcdc=off
+-line-count=off
+
+# Cover source file list
+-cover=none
+-ignoreCTDT=on
+
+# Verbosity flag
+-verbosity=0
+
+# Processed source code flags
+-keep-ppc=off
+-keep-instr=off
+
+# Inlined function handling flags
+-tag-inlined=on
+-tag-included=off
+
+# Project type
+-project-type=VxWorks

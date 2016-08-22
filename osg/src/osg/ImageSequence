@@ -1,0 +1,120 @@
+/* -*-c++-*- OpenSceneGraph - Copyright (C) 1998-2006 Robert Osfield 
+ *
+ * This library is open source and may be redistributed and/or modified under  
+ * the terms of the OpenSceneGraph Public License (OSGPL) version 0.0 or 
+ * (at your option) any later version.  The full license is in LICENSE file
+ * included with this distribution, and on the openscenegraph.org website.
+ * 
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+ * OpenSceneGraph Public License for more details.
+*/
+
+#ifndef OSG_IMAGESEQUENCE
+#define OSG_IMAGESEQUENCE 1
+
+#include <OpenThreads/Mutex>
+#include <osg/ImageStream>
+#include <osg/StateAttribute>
+
+#include <list>
+
+namespace osg {
+
+/**
+  * Image Buffer class.
+*/
+class OSG_EXPORT ImageSequence : public ImageStream
+{
+    public:
+        ImageSequence();
+
+        /** Copy constructor using CopyOp to manage deep vs shallow copy. */
+        ImageSequence(const ImageSequence& ImageSequence, const CopyOp& copyop=CopyOp::SHALLOW_COPY);
+
+        virtual Object* cloneType() const { return new ImageSequence(); }
+        virtual Object* clone(const CopyOp& copyop) const { return new ImageSequence(*this,copyop); }
+        virtual bool isSameKindAs(const Object* obj) const { return dynamic_cast<const ImageSequence*>(obj)!=0; }
+        virtual const char* libraryName() const { return "osg"; }
+        virtual const char* className() const { return "ImageSequence"; }
+
+        /** Return -1 if *this < *rhs, 0 if *this==*rhs, 1 if *this>*rhs. */
+        virtual int compare(const Image& rhs) const;
+
+        virtual void setReferenceTime(double t) { _referenceTime = t; }
+        virtual double getReferenceTime() const { return _referenceTime; }
+                
+        virtual void setTimeMultiplier(double tm) { _timeMultiplier = tm; }
+        virtual double getTimeMultiplier() const { return _timeMultiplier; }
+
+        typedef std::list< osg::ref_ptr<osg::Image> >   Images;
+        typedef std::list< std::string >                FileNames;
+        
+        enum Mode
+        {
+            PRE_LOAD_ALL_IMAGES,
+            PAGE_AND_RETAIN_IMAGES,
+            PAGE_AND_DISCARD_USED_IMAGES
+        };
+        
+        void setMode(Mode mode);
+        Mode getMode() const { return _mode; }
+
+        void setDuration(double duration);
+        double getDuration() const { return _duration; }
+
+        void addImageFile(const std::string& fileName);
+        
+        FileNames& getFileNames() { return _fileNames; }
+        const FileNames& getFileNames() const { return _fileNames; }
+
+        void addImage(osg::Image* image);
+        
+        Images& getImages() { return _images; }
+        const Images& getImages() const { return _images; }
+        
+
+        virtual void update(NodeVisitor* nv);
+
+        struct OSG_EXPORT UpdateCallback : public osg::StateAttribute::Callback
+        {
+            virtual void operator () (osg::StateAttribute* attr, osg::NodeVisitor* nv);
+        };
+
+    protected:
+
+        virtual ~ImageSequence() {}
+        
+        void setImageToChild(const osg::Image* image);
+        
+        void computeTimePerImage();
+
+        double                          _referenceTime;
+        double                          _timeMultiplier;
+
+        Mode                            _mode;
+        double                          _duration;
+
+        double                          _timePerImage;
+
+        OpenThreads::Mutex              _mutex;
+        FileNames                       _fileNames;
+        FileNames::iterator             _fileNamesIterator;
+        double                          _fileNamesIteratorTime;
+
+        double                          _imageHeadTime;
+        Images                          _images;
+        Images::iterator                _imageIterator;
+        double                          _imageIteratorTime;
+        
+        typedef std::pair< std::string, osg::ref_ptr<osg::Image> >  FileNameImagePair;
+        typedef std::list< FileNameImagePair >  FileNameImageList;
+        
+        FileNameImageList               _filesRequested;
+
+};
+
+} // namespace
+
+#endif

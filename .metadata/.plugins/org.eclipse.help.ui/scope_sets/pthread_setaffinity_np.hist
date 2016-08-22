@@ -1,0 +1,4 @@
+#Sun Aug 21 09:55:41 CST 2016
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=pthread_setaffinity_np

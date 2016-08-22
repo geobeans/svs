@@ -1,0 +1,89 @@
+/* -*-c++-*- OpenSceneGraph - Copyright (C) 1998-2006 Robert Osfield 
+ *
+ * This library is open source and may be redistributed and/or modified under  
+ * the terms of the OpenSceneGraph Public License (OSGPL) version 0.0 or 
+ * (at your option) any later version.  The full license is in LICENSE file
+ * included with this distribution, and on the openscenegraph.org website.
+ * 
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
+ * OpenSceneGraph Public License for more details.
+*/
+
+#ifndef OSG_TRANSFERFUNCTION
+#define OSG_TRANSFERFUNCTION 1
+
+#include <osg/Texture>
+#include <osg/Shader>
+
+namespace osg {
+
+
+/** TransferFunction is a class that provide a 1D,2D or 3D colour look up table
+  * that can be used on the GPU as a 1D, 2D or 3D texture.  
+  * Typically uses include mapping heights to colours when contouring terrain, 
+  * or mapping intensities to colours when volume rendering.
+*/
+class OSG_EXPORT TransferFunction : public osg::Referenced
+{
+    public :
+    
+        TransferFunction();
+
+        osg::Image* getImage() { return _image.get(); }
+        const osg::Image* getImage() const { return _image.get(); }
+        
+        osg::Texture* getTexture() { return _texture.get(); }
+        const osg::Texture* getTexture() const { return _texture.get(); }
+        
+        osg::Shader* getShader() { return _shader.get(); }
+        const osg::Shader* getShader() const { return _shader.get(); }
+        
+    protected:
+    
+        virtual ~TransferFunction();
+
+        typedef std::vector<osg::Vec4> Colors;
+
+        Colors                      _colors;
+        osg::ref_ptr<osg::Image>    _image;
+        osg::ref_ptr<osg::Texture>  _texture;
+        osg::ref_ptr<osg::Shader>   _shader;
+
+};
+
+/** 1D variant of TransferFunction. */
+class OSG_EXPORT TransferFunction1D : public osg::TransferFunction
+{
+    public:
+    
+        TransferFunction1D();
+    
+        void setInputRange(float minimum, float maximum);
+        
+        void setMinimum(float value) { _minimum = value; }
+        float getMinimum() const { return _minimum; }
+        
+        void setMaximum(float value) { _maximum = value; }
+        float getMaximum() const { return _maximum; }
+
+        void allocate(unsigned int numX);
+
+        void clear(const osg::Vec4& color = osg::Vec4(1.0f,1.0f,1.0f,1.0f));
+        
+        unsigned int getNumberCellsX() const { return _colors.size(); }
+
+        void setValue(unsigned int i, const osg::Vec4& color) { _colors[i] = color; if (_image.valid()) _image->dirty(); }
+        const osg::Vec4& getValue(unsigned int i) const { return _colors[i]; }
+
+    protected:
+    
+        float _minimum;
+        float _maximum;
+    
+};
+
+}
+
+#endif
