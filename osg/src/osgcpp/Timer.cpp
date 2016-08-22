@@ -72,8 +72,8 @@ Timer* Timer::instance()
 
 #else
 
-    #include <times.h>
-
+    #include <sys/times.h>
+    #include <TimerExt.h>
     Timer::Timer( void )
     {
         _secsPerTick = (1.0 / (double) 1000000);
@@ -81,7 +81,7 @@ Timer* Timer::instance()
         setStartTick();        
     }
 
-    Timer_t Timer::tick() constget
+    Timer_t Timer::tick() const
     {
         struct timeval tv;
         gettimeofday(&tv, NULL);
