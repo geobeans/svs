@@ -2824,3 +2824,144 @@ Contains: Could not delete: C:\WindRiver\workspace\osg.
 
 !ENTRY org.eclipse.cdt.core 1 0 2016-08-21 22:29:18.176
 !MESSAGE Indexed 'osg' (128 sources, 220 headers) in 12.91 sec: 36,249 declarations; 105,115 references; 29 unresolved inclusions; 0 syntax errors; 1,421 unresolved names (1.00%)
+!SESSION 2016-08-22 11:01:06.013 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.5.0_11
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2016-08-22 11:01:07.675
+!MESSAGE ProvisioningEventBus could not be obtained. Metadata caches may not be cleaned up properly.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2016-08-22 11:01:10.055
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2016-08-22 11:01:10.056
+!MESSAGE The installable unit org.eclipse.ant.optional.junit.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2016-08-22 11:01:10.083
+!MESSAGE The installable unit org.eclipse.ui.win32.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.equinox.p2.directorywatcher 4 0 2016-08-22 11:01:10.086
+!MESSAGE The installable unit org.eclipse.ant.optional.junit.translated_host_properties is missing the filename property.
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-08-22 11:01:37.390
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY com.windriver.ide.target 1 0 2016-08-22 11:01:52.054
+!MESSAGE C:\WindRiver\workbench-3.2\foundation\x86-win32\bin\wtxregd.exe
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-08-22 11:01:53.181
+!MESSAGE Indexed 'openthreads' (6 sources, 56 headers) in 3.30 sec: 4,859 declarations; 11,162 references; 0 unresolved inclusions; 0 syntax errors; 4 unresolved names (0.02%)
+
+!ENTRY com.windriver.ide.target 1 0 2016-08-22 11:02:00.014
+!MESSAGE C:\WindRiver\workbench-3.2\dfw\\x86-win32\bin\dfwserver.exe  -protocol mi -io sockets -useregistry -session dfw-wb32-Jinping -registryhost localhost
+
+!ENTRY com.windriver.ide.target 1 0 2016-08-22 11:02:01.445
+!MESSAGE Connected to dfwserver at 127.0.0.1, 127.0.0.1:37682, PID=23408, Session="dfw-wb32-Jinping"
+
+!ENTRY com.windriver.ide.target 1 0 2016-08-22 11:02:08.149
+!MESSAGE Wind River Debug Server API Version '02.000.000' (build name 'DFW_FREEZE_0262 - 11/19/2009 09:36:10')
+
+!ENTRY org.eclipse.cdt.core 1 0 2016-08-22 11:02:11.624
+!MESSAGE Indexed 'osg' (127 sources, 226 headers) in 18.28 sec: 36,287 declarations; 104,373 references; 16 unresolved inclusions; 0 syntax errors; 458 unresolved names (0.32%)
+
+!ENTRY org.eclipse.help 4 0 2016-08-22 15:20:41.077
+!MESSAGE Error reading context-sensitive help file /"com.windriver.ide.doc.wr_vx_simulator/contexts_wrs.xml" (skipping file)
+!STACK 0
+java.io.FileNotFoundException
+	at org.eclipse.help.internal.context.ContextFileProvider.loadContexts(ContextFileProvider.java:235)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContexts(ContextFileProvider.java:181)
+	at org.eclipse.help.internal.context.ContextFileProvider.getPluginContexts(ContextFileProvider.java:158)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContext(ContextFileProvider.java:83)
+	at org.eclipse.help.internal.context.ContextManager.getContext(ContextManager.java:85)
+	at org.eclipse.help.HelpSystem.getContext(HelpSystem.java:49)
+	at com.windriver.ide.internal.apidoc.WRAPIHelpProvider.getFunctionInfo(WRAPIHelpProvider.java:110)
+	at org.eclipse.cdt.internal.ui.text.CHelpSettings.getFunctionInfo(CHelpSettings.java:121)
+	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getFunctionInfo(CHelpProviderManager.java:163)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CDocHover.getHoverInfo(CDocHover.java:84)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractCEditorTextHover.getHoverInfo2(AbstractCEditorTextHover.java:83)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:86)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.help 4 0 2016-08-22 15:20:41.201
+!MESSAGE Error reading context-sensitive help file /"com.windriver.ide.doc.wr_tipc/contexts_wrs.xml" (skipping file)
+!STACK 0
+java.io.FileNotFoundException
+	at org.eclipse.help.internal.context.ContextFileProvider.loadContexts(ContextFileProvider.java:235)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContexts(ContextFileProvider.java:181)
+	at org.eclipse.help.internal.context.ContextFileProvider.getPluginContexts(ContextFileProvider.java:158)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContext(ContextFileProvider.java:83)
+	at org.eclipse.help.internal.context.ContextManager.getContext(ContextManager.java:85)
+	at org.eclipse.help.HelpSystem.getContext(HelpSystem.java:49)
+	at com.windriver.ide.internal.apidoc.WRAPIHelpProvider.getFunctionInfo(WRAPIHelpProvider.java:110)
+	at org.eclipse.cdt.internal.ui.text.CHelpSettings.getFunctionInfo(CHelpSettings.java:121)
+	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getFunctionInfo(CHelpProviderManager.java:163)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CDocHover.getHoverInfo(CDocHover.java:84)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractCEditorTextHover.getHoverInfo2(AbstractCEditorTextHover.java:83)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:86)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.help 4 0 2016-08-22 15:20:41.268
+!MESSAGE Error reading context-sensitive help file /"com.windriver.ide.doc.wr_snmp/contexts_wrs.xml" (skipping file)
+!STACK 0
+org.xml.sax.SAXParseException: Invalid byte 1 of 1-byte UTF-8 sequence.
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:264)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:292)
+	at org.eclipse.help.internal.dynamic.DocumentReader.read(DocumentReader.java:56)
+	at org.eclipse.help.internal.dynamic.DocumentReader.read(DocumentReader.java:44)
+	at org.eclipse.help.internal.context.ContextFileProvider.loadContexts(ContextFileProvider.java:202)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContexts(ContextFileProvider.java:181)
+	at org.eclipse.help.internal.context.ContextFileProvider.getPluginContexts(ContextFileProvider.java:158)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContext(ContextFileProvider.java:83)
+	at org.eclipse.help.internal.context.ContextManager.getContext(ContextManager.java:85)
+	at org.eclipse.help.HelpSystem.getContext(HelpSystem.java:49)
+	at com.windriver.ide.internal.apidoc.WRAPIHelpProvider.getFunctionInfo(WRAPIHelpProvider.java:110)
+	at org.eclipse.cdt.internal.ui.text.CHelpSettings.getFunctionInfo(CHelpSettings.java:121)
+	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getFunctionInfo(CHelpProviderManager.java:163)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CDocHover.getHoverInfo(CDocHover.java:84)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractCEditorTextHover.getHoverInfo2(AbstractCEditorTextHover.java:83)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:86)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.help 4 0 2016-08-22 15:20:41.326
+!MESSAGE Error reading context-sensitive help file /"com.windriver.ide.doc.wr_ppp/contexts_wrs.xml" (skipping file)
+!STACK 0
+java.io.FileNotFoundException
+	at org.eclipse.help.internal.context.ContextFileProvider.loadContexts(ContextFileProvider.java:235)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContexts(ContextFileProvider.java:181)
+	at org.eclipse.help.internal.context.ContextFileProvider.getPluginContexts(ContextFileProvider.java:158)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContext(ContextFileProvider.java:83)
+	at org.eclipse.help.internal.context.ContextManager.getContext(ContextManager.java:85)
+	at org.eclipse.help.HelpSystem.getContext(HelpSystem.java:49)
+	at com.windriver.ide.internal.apidoc.WRAPIHelpProvider.getFunctionInfo(WRAPIHelpProvider.java:110)
+	at org.eclipse.cdt.internal.ui.text.CHelpSettings.getFunctionInfo(CHelpSettings.java:121)
+	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getFunctionInfo(CHelpProviderManager.java:163)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CDocHover.getHoverInfo(CDocHover.java:84)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractCEditorTextHover.getHoverInfo2(AbstractCEditorTextHover.java:83)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:86)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+
+!ENTRY org.eclipse.help 4 0 2016-08-22 15:20:41.460
+!MESSAGE Error reading context-sensitive help file /"com.windriver.ide.doc.wr_mipc/contexts_wrs.xml" (skipping file)
+!STACK 0
+java.io.FileNotFoundException
+	at org.eclipse.help.internal.context.ContextFileProvider.loadContexts(ContextFileProvider.java:235)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContexts(ContextFileProvider.java:181)
+	at org.eclipse.help.internal.context.ContextFileProvider.getPluginContexts(ContextFileProvider.java:158)
+	at org.eclipse.help.internal.context.ContextFileProvider.getContext(ContextFileProvider.java:83)
+	at org.eclipse.help.internal.context.ContextManager.getContext(ContextManager.java:85)
+	at org.eclipse.help.HelpSystem.getContext(HelpSystem.java:49)
+	at com.windriver.ide.internal.apidoc.WRAPIHelpProvider.getFunctionInfo(WRAPIHelpProvider.java:110)
+	at org.eclipse.cdt.internal.ui.text.CHelpSettings.getFunctionInfo(CHelpSettings.java:121)
+	at org.eclipse.cdt.internal.ui.CHelpProviderManager.getFunctionInfo(CHelpProviderManager.java:163)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CDocHover.getHoverInfo(CDocHover.java:84)
+	at org.eclipse.cdt.internal.ui.text.c.hover.AbstractCEditorTextHover.getHoverInfo2(AbstractCEditorTextHover.java:83)
+	at org.eclipse.cdt.internal.ui.text.c.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:131)
+	at org.eclipse.cdt.internal.ui.text.c.hover.CEditorTextHoverProxy.getHoverInfo2(CEditorTextHoverProxy.java:86)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)

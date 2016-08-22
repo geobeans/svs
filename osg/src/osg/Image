@@ -120,10 +120,10 @@ class OSG_EXPORT Image : public Object
 
 
         /** Scale image to specified size. */
-        void scaleImage(int s,int t,int r) { scaleImage(s,t,r, getDataType()); }
+        /* void scaleImage(int s,int t,int r) { scaleImage(s,t,r, getDataType()); } */
 
         /** Scale image to specified size and with specified data type. */
-        void scaleImage(int s,int t,int r, GLenum newDataType);
+        /* void scaleImage(int s,int t,int r, GLenum newDataType); */
 
         /** Copy a source Image into a subpart of this Image at specified position.
           * Typically used to copy to an already allocated image, such as creating
@@ -132,7 +132,7 @@ class OSG_EXPORT Image : public Object
           * accomodate the source image in its offset position.
           * If source is NULL then no operation happens, this Image is left unchanged.
         */
-        void copySubImage(int s_offset,int t_offset,int r_offset,osg::Image* source);
+        /* void copySubImage(int s_offset,int t_offset,int r_offset,osg::Image* source); */
 
 
         enum Origin 
@@ -232,7 +232,7 @@ class OSG_EXPORT Image : public Object
           * power of two and are within the maxiumum texture size for
           * the host machine.
         */
-        void ensureValidSizeForTexturing(GLint maxTextureSize);
+        /* void ensureValidSizeForTexturing(GLint maxTextureSize); */
       
         /** Dirty the image, which increments the modified count, to force osg::Texture to reload the image. */
         inline void dirty() { ++_modifiedCount; if (_bufferObject.valid()) _bufferObject->dirty(); }      

@@ -1,3 +1,2 @@
 compilerInspection.o:  \
-  C:/WindRiver/workspace/.metadata/.plugins/com.windriver.ide.core/compilerInspection.cpp
-
+ E:/UAV/workspace/.metadata/.plugins/com.windriver.ide.core/compilerInspection.cpp

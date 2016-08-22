@@ -27,8 +27,8 @@
 #include <map>
 #include <list>
 
-#include <OpenThreads/ScopedLock>
-#include <OpenThreads/Mutex>
+#include <ScopedLock>
+#include <Mutex>
 
 using namespace osg;
 
