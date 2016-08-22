@@ -803,39 +803,40 @@ void Image::readImageFromCurrentTexture(unsigned int contextID, bool copyMipMaps
     }    
 }
 
-//
-//void Image::scaleImage(int s,int t,int r, GLenum newDataType)
-//{
-//    if (_s==s && _t==t && _r==r) return;
-//
-//    if (_data==NULL)
-//    {
-//        notify(WARN) << "Error Image::scaleImage() do not succeed : cannot scale NULL image."<<std::endl;
-//        return;
-//    }
-//
-//    if (_r!=1 || r!=1)
-//    {
-//        notify(WARN) << "Error Image::scaleImage() do not succeed : scaling of volumes not implemented."<<std::endl;
-//        return;
-//    }
-//
-//    
-//
-//    unsigned int newTotalSize = computeRowWidthInBytes(s,_pixelFormat,newDataType,_packing)*t;
-//
-//    // need to sort out what size to really use...
-//    unsigned char* newData = new unsigned char [newTotalSize];
-//    if (!newData)
-//    {
-//        // should we throw an exception???  Just return for time being.
-//        notify(FATAL) << "Error Image::scaleImage() do not succeed : out of memory."<<newTotalSize<<std::endl;
-//        return;
-//    }
-//
-//    glPixelStorei(GL_PACK_ALIGNMENT,_packing);
-//    glPixelStorei(GL_UNPACK_ALIGNMENT,_packing);
-//
+
+void Image::scaleImage(int s,int t,int r, GLenum newDataType)
+{
+    if (_s==s && _t==t && _r==r) return;
+
+    if (_data==NULL)
+    {
+        notify(WARN) << "Error Image::scaleImage() do not succeed : cannot scale NULL image."<<std::endl;
+        return;
+    }
+
+    if (_r!=1 || r!=1)
+    {
+        notify(WARN) << "Error Image::scaleImage() do not succeed : scaling of volumes not implemented."<<std::endl;
+        return;
+    }
+
+    notify(WARN)<<"Warning: Image::scaleImage failed because of not realized gluScaleImage function."<<std::endl;
+    return;
+
+    unsigned int newTotalSize = computeRowWidthInBytes(s,_pixelFormat,newDataType,_packing)*t;
+
+    // need to sort out what size to really use...
+    unsigned char* newData = new unsigned char [newTotalSize];
+    if (!newData)
+    {
+        // should we throw an exception???  Just return for time being.
+        notify(FATAL) << "Error Image::scaleImage() do not succeed : out of memory."<<newTotalSize<<std::endl;
+        return;
+    }
+
+    glPixelStorei(GL_PACK_ALIGNMENT,_packing);
+    glPixelStorei(GL_UNPACK_ALIGNMENT,_packing);
+
 //    GLint status = gluScaleImage(_pixelFormat,
 //        _s,
 //        _t,
@@ -863,45 +864,48 @@ void Image::readImageFromCurrentTexture(unsigned int contextID, bool copyMipMaps
 //    }
 //    
 //    dirty();
-//}
+}
 
-//void Image::copySubImage(int s_offset,int t_offset,int r_offset,osg::Image* source)
-//{
-//    if (!source) return;
-//    if (s_offset<0 || t_offset<0 || r_offset<0) 
-//    {
-//        notify(WARN)<<"Warning: negative offsets passed to Image::copySubImage(..) not supported, operation ignored."<<std::endl;
-//        return;
-//    }
-//    
-//    if (!_data)
-//    {
-//        notify(INFO)<<"allocating image"<<endl;
-//        allocateImage(s_offset+source->s(),t_offset+source->t(),r_offset+source->r(),
-//                    source->getPixelFormat(),source->getDataType(),
-//                    source->getPacking());
-//    }
-//    
-//    if (s_offset>=_s || t_offset>=_t  || r_offset>=_r)
-//    {
-//        notify(WARN)<<"Warning: offsets passed to Image::copySubImage(..) outside destination image, operation ignored."<<std::endl;
-//        return;
-//    }
-//    
-//    
-//    if (_pixelFormat != source->getPixelFormat())
-//    {
-//        notify(WARN)<<"Warning: image with an incompatible pixel formats passed to Image::copySubImage(..), operation ignored."<<std::endl;
-//        return;
-//    }
-//
-//    void* data_destination = data(s_offset,t_offset,r_offset);
-//    
-//    glPixelStorei(GL_PACK_ALIGNMENT,source->getPacking());
-//    glPixelStorei(GL_PACK_ROW_LENGTH,_s);
-//
-//    glPixelStorei(GL_UNPACK_ALIGNMENT,_packing);
-//    
+void Image::copySubImage(int s_offset,int t_offset,int r_offset,osg::Image* source)
+{
+    if (!source) return;
+    if (s_offset<0 || t_offset<0 || r_offset<0) 
+    {
+        notify(WARN)<<"Warning: negative offsets passed to Image::copySubImage(..) not supported, operation ignored."<<std::endl;
+        return;
+    }
+    
+    if (!_data)
+    {
+        notify(INFO)<<"allocating image"<<endl;
+        allocateImage(s_offset+source->s(),t_offset+source->t(),r_offset+source->r(),
+                    source->getPixelFormat(),source->getDataType(),
+                    source->getPacking());
+    }
+    
+    if (s_offset>=_s || t_offset>=_t  || r_offset>=_r)
+    {
+        notify(WARN)<<"Warning: offsets passed to Image::copySubImage(..) outside destination image, operation ignored."<<std::endl;
+        return;
+    }
+    
+    
+    if (_pixelFormat != source->getPixelFormat())
+    {
+        notify(WARN)<<"Warning: image with an incompatible pixel formats passed to Image::copySubImage(..), operation ignored."<<std::endl;
+        return;
+    }
+    
+    notify(WARN)<<"Warning: Image::copySubImage failed because of not realized gluScaleImage function."<<std::endl;
+    return;
+
+    void* data_destination = data(s_offset,t_offset,r_offset);
+    
+    glPixelStorei(GL_PACK_ALIGNMENT,source->getPacking());
+    glPixelStorei(GL_PACK_ROW_LENGTH,_s);
+
+    glPixelStorei(GL_UNPACK_ALIGNMENT,_packing);
+    
 //    GLint status = gluScaleImage(_pixelFormat,
 //        source->s(),
 //        source->t(),
@@ -918,8 +922,8 @@ void Image::readImageFromCurrentTexture(unsigned int contextID, bool copyMipMaps
 //    {
 //        notify(WARN) << "Error Image::scaleImage() do not succeed : errorString = "<<gluErrorString((GLenum)status)<<std::endl;
 //    }
-//
-//}
+
+}
 
 
 void Image::flipHorizontal()
@@ -1050,22 +1054,24 @@ void Image::flipVertical()
 
 
 
-//void Image::ensureValidSizeForTexturing(GLint maxTextureSize)
-//{
-//    int new_s = computeNearestPowerOfTwo(_s);
-//    int new_t = computeNearestPowerOfTwo(_t);
-//    
-//    if (new_s>maxTextureSize) new_s = maxTextureSize;
-//    if (new_t>maxTextureSize) new_t = maxTextureSize;
-//    
-//    if (new_s!=_s || new_t!=_t)
-//    {
-//        if (!_fileName.empty()) notify(NOTICE) << "Scaling image '"<<_fileName<<"' from ("<<_s<<","<<_t<<") to ("<<new_s<<","<<new_t<<")"<<std::endl;
-//        else notify(NOTICE) << "Scaling image from ("<<_s<<","<<_t<<") to ("<<new_s<<","<<new_t<<")"<<std::endl;
-//
-//        scaleImage(new_s,new_t,_r);
-//    }
-//}
+void Image::ensureValidSizeForTexturing(GLint maxTextureSize)
+{
+	notify(WARN)<<"Warning: Image::ensureValidSizeForTexturing failed because of not realized gluScaleImage function."<<std::endl;
+	    return;
+    int new_s = computeNearestPowerOfTwo(_s);
+    int new_t = computeNearestPowerOfTwo(_t);
+    
+    if (new_s>maxTextureSize) new_s = maxTextureSize;
+    if (new_t>maxTextureSize) new_t = maxTextureSize;
+    
+    if (new_s!=_s || new_t!=_t)
+    {
+        if (!_fileName.empty()) notify(NOTICE) << "Scaling image '"<<_fileName<<"' from ("<<_s<<","<<_t<<") to ("<<new_s<<","<<new_t<<")"<<std::endl;
+        else notify(NOTICE) << "Scaling image from ("<<_s<<","<<_t<<") to ("<<new_s<<","<<new_t<<")"<<std::endl;
+
+        //scaleImage(new_s,new_t,_r);
+    }
+}
 
 
 template <typename T>    

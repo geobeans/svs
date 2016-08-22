@@ -29,8 +29,8 @@
 #include <osg/Shader>
 #include <osg/GLExtensions>
 
-#include <OpenThreads/ScopedLock>
-#include <OpenThreads/Mutex>
+#include <ScopedLock>
+#include <Mutex>
 
 using namespace osg;
 

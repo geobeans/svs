@@ -1009,9 +1009,12 @@ void Texture::applyTexImage2D_load(State& state, GLenum target, const Image* ima
 
         // rescale the image to the correct size.
         glPixelStorei(GL_PACK_ALIGNMENT,image->getPacking());
-        gluScaleImage(image->getPixelFormat(),
-                      image->s(),image->t(),image->getDataType(),image->data(),
-                      inwidth,inheight,image->getDataType(),data);
+        notify(WARN)<<"Warning: Image::applyTexImage2D_load failed because of not realized gluScaleImage function."<<std::endl;
+        	    return;
+           
+//        gluScaleImage(image->getPixelFormat(),
+//                      image->s(),image->t(),image->getDataType(),image->data(),
+//                      inwidth,inheight,image->getDataType(),data);
         
     }    
 
@@ -1255,9 +1258,11 @@ void Texture::applyTexImage2D_subload(State& state, GLenum target, const Image* 
 
         // rescale the image to the correct size.
         glPixelStorei(GL_PACK_ALIGNMENT,image->getPacking());
-        gluScaleImage(image->getPixelFormat(),
-                      image->s(),image->t(),image->getDataType(),image->data(),
-                      inwidth,inheight,image->getDataType(),data);
+        notify(WARN)<<"Warning: Image::applyTexImage2D_subload failed because of not realized gluScaleImage function."<<std::endl;
+               	    return;
+//        gluScaleImage(image->getPixelFormat(),
+//                      image->s(),image->t(),image->getDataType(),image->data(),
+//                      inwidth,inheight,image->getDataType(),data);
         
     }    
 
