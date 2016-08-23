@@ -288,10 +288,11 @@ void Texture1D::applyTexImage1D(GLenum target, Image* image, State& state, GLsiz
 
             numMipmapLevels = 1;
 
-            gluBuild1DMipmaps( target, _internalFormat,
-                image->s(),
-                (GLenum)image->getPixelFormat(), (GLenum)image->getDataType(),
-                image->data() );
+            osg::notify(WARN)<<"OpenGL extension gluBuild1DMipmaps is not supported."<<std::endl;
+//            gluBuild1DMipmaps( target, _internalFormat,
+//                image->s(),
+//                (GLenum)image->getPixelFormat(), (GLenum)image->getDataType(),
+//                image->data() );
 
         }
         else

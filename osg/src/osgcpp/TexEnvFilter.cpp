@@ -13,6 +13,7 @@
 #include <osg/GLExtensions>
 #include <osg/TexEnvFilter>
 #include <osg/State>
+#include <osg/notify>
 
 using namespace osg;
 
@@ -34,6 +35,8 @@ void TexEnvFilter::apply(State& state) const
 
     if (s_isTexLodBias)
     {
-        glTexEnvf(GL_TEXTURE_FILTER_CONTROL_EXT, GL_TEXTURE_LOD_BIAS_EXT, _lodBias);
+        osg::notify(WARN)<<"TexEnvFilter::apply glTexEnvf(GL_TEXTURE_FILTER_CONTROL_EXT, GL_TEXTURE_LOD_BIAS_EXT, _lodBias) is not supported."<<std::endl;
+    	//OpenGL only support 1.3
+        //glTexEnvf(GL_TEXTURE_FILTER_CONTROL_EXT, GL_TEXTURE_LOD_BIAS_EXT, _lodBias);
     }
 }
