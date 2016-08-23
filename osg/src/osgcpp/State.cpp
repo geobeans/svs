@@ -941,9 +941,10 @@ bool State::checkGLErrors(const char* str) const
     GLenum errorNo = glGetError();
     if (errorNo!=GL_NO_ERROR)
     {
-        const char* error = (char*)gluErrorString(errorNo);
-        if (error) osg::notify(WARN)<<"Warning: detected OpenGL error '" << error<<"'";
-        else       osg::notify(WARN)<<"Warning: detected OpenGL error number 0x" << std::hex << errorNo;
+        //const char* error = (char*)gluErrorString(errorNo);
+        //if (error) osg::notify(WARN)<<"Warning: detected OpenGL error '" << error<<"'";
+        //else
+        osg::notify(WARN)<<"Warning: detected OpenGL error number 0x" << std::hex << errorNo;
 
         if (str) osg::notify(WARN)<<" at "<<str<< std::endl;
         else     osg::notify(WARN)<<" in osg::State."<< std::endl;
@@ -958,9 +959,10 @@ bool State::checkGLErrors(StateAttribute::GLMode mode) const
     GLenum errorNo = glGetError();
     if (errorNo!=GL_NO_ERROR)
     {
-        const char* error = (char*)gluErrorString(errorNo);
-        if (error) osg::notify(WARN)<<"Warning: detected OpenGL error '"<< error <<"' after applying GLMode 0x"<<hex<<mode<<dec<< std::endl;
-        else       osg::notify(WARN)<<"Warning: detected OpenGL error number 0x"<< std::hex << errorNo <<" after applying GLMode 0x"<<hex<<mode<<dec<< std::endl;
+        //const char* error = (char*)gluErrorString(errorNo);
+        //if (error) osg::notify(WARN)<<"Warning: detected OpenGL error '"<< error <<"' after applying GLMode 0x"<<hex<<mode<<dec<< std::endl;
+        //else
+    	osg::notify(WARN)<<"Warning: detected OpenGL error number 0x"<< std::hex << errorNo <<" after applying GLMode 0x"<<hex<<mode<<dec<< std::endl;
 
         return true;
     }
@@ -972,9 +974,10 @@ bool State::checkGLErrors(const StateAttribute* attribute) const
     GLenum errorNo = glGetError();
     if (errorNo!=GL_NO_ERROR)
     {
-        const char* error = (char*)gluErrorString(errorNo);
-        if (error) osg::notify(WARN)<<"Warning: detected OpenGL error '"<< error <<"' after applying attribute "<<attribute->className()<<" "<<attribute<< std::endl;
-        else       osg::notify(WARN)<<"Warning: detected OpenGL error number 0x"<< std::hex << errorNo <<" after applying attribute "<<attribute->className()<<" "<<attribute<< std::endl;
+        //const char* error = (char*)gluErrorString(errorNo);
+        //if (error) osg::notify(WARN)<<"Warning: detected OpenGL error '"<< error <<"' after applying attribute "<<attribute->className()<<" "<<attribute<< std::endl;
+        //else
+    	osg::notify(WARN)<<"Warning: detected OpenGL error number 0x"<< std::hex << errorNo <<" after applying attribute "<<attribute->className()<<" "<<attribute<< std::endl;
 
         return true;
     }
