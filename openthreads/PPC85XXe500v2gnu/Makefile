@@ -32,7 +32,7 @@ else
 MODE_DIR := NonDebug
 endif
 OBJ_DIR := .
-WS_ROOT_DIR := C:/WindRiver/workspace
+WS_ROOT_DIR := E:/UAV/workspace
 PRJ_ROOT_DIR := $(WS_ROOT_DIR)/openthreads
 
 
@@ -122,6 +122,10 @@ openthreads/$(MODE_DIR)/Objects/openthreads/src/common/Atomic.o : $(PRJ_ROOT_DIR
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
 
+openthreads/$(MODE_DIR)/Objects/openthreads/src/common/TimerExt.o : $(PRJ_ROOT_DIR)/src/common/TimerExt.c
+	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C-Compiler) $(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP $(ADDED_CFLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
+
+
 openthreads/$(MODE_DIR)/Objects/openthreads/src/common/Version.o : $(PRJ_ROOT_DIR)/src/common/Version.cpp
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
@@ -143,6 +147,7 @@ openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThreadMutex.o : $(PRJ_
 
 
 OBJECTS_openthreads = openthreads/$(MODE_DIR)/Objects/openthreads/src/common/Atomic.o \
+	 openthreads/$(MODE_DIR)/Objects/openthreads/src/common/TimerExt.o \
 	 openthreads/$(MODE_DIR)/Objects/openthreads/src/common/Version.o \
 	 openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThread.o \
 	 openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThreadBarrier.o \
@@ -159,8 +164,9 @@ _clean :: openthreads/$(MODE_DIR)/openthreads_clean
 openthreads/$(MODE_DIR)/openthreads_clean : 
 	$(TRACE_FLAG)if [ -d "openthreads" ]; then cd "openthreads"; rm -rf $(MODE_DIR); fi
 
-DEP_FILES := openthreads/$(MODE_DIR)/Objects/openthreads/src/common/Atomic.d openthreads/$(MODE_DIR)/Objects/openthreads/src/common/Version.d openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThread.d \
-	 openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThreadBarrier.d openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThreadCondition.d openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThreadMutex.d
+DEP_FILES := openthreads/$(MODE_DIR)/Objects/openthreads/src/common/Atomic.d openthreads/$(MODE_DIR)/Objects/openthreads/src/common/TimerExt.d openthreads/$(MODE_DIR)/Objects/openthreads/src/common/Version.d \
+	 openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThread.d openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThreadBarrier.d openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThreadCondition.d \
+	 openthreads/$(MODE_DIR)/Objects/openthreads/src/pthreads/PThreadMutex.d
 -include $(DEP_FILES)
 
 

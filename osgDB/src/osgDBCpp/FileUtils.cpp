@@ -83,8 +83,8 @@ bool osgDB::makeDirectory( const std::string &path )
         return false;
     }
     
-    struct stat64 stbuf;
-    if( stat64( path.c_str(), &stbuf ) == 0 )
+    struct stat stbuf;
+    if( stat( path.c_str(), &stbuf ) == 0 )
     {
         if( S_ISDIR(stbuf.st_mode))
             return true;
@@ -103,7 +103,7 @@ bool osgDB::makeDirectory( const std::string &path )
         if( dir.empty() )
             break;
  
-        if( stat64( dir.c_str(), &stbuf ) < 0 )
+        if( stat( dir.c_str(), &stbuf ) < 0 )
         {
             switch( errno )
             {
@@ -132,7 +132,7 @@ bool osgDB::makeDirectory( const std::string &path )
             }
         #endif
 
-        if( mkdir( dir.c_str(), 0755 )< 0 )
+        if( mkdir( dir.c_str())< 0 )
         {
             osg::notify(osg::DEBUG_INFO) << "osgDB::makeDirectory(): "  << strerror(errno) << std::endl;
             return false;
@@ -179,8 +179,8 @@ bool osgDB::fileExists(const std::string& filename)
 
 osgDB::FileType osgDB::fileType(const std::string& filename)
 {
-    struct stat64 fileStat;
-    if ( stat64(filename.c_str(), &fileStat) != 0 ) 
+    struct stat fileStat;
+    if ( stat(filename.c_str(), &fileStat) != 0 ) 
     {
         return FILE_NOT_FOUND;
     } // end if

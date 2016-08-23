@@ -26,6 +26,9 @@
 #include <osgDB/Registry>
 #include <osgDB/ReadFile>
 
+#include <envLib.h> 
+
+
 using namespace osg;
 using namespace osgDB;
 
