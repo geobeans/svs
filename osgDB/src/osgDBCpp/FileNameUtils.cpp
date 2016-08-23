@@ -273,10 +273,12 @@ std::string osgDB::getRealPath(const std::string& path)
         return FilePath;
     }
 #else
-    char resolved_path[PATH_MAX];
-    char* result = realpath(path.c_str(), resolved_path);
+    osg::notify(osg::WARN) << "getrealpath not support realpath function!" <<std::endl;
+    //char resolved_path[PATH_MAX];
+    //char* result = realpath(path.c_str(), resolved_path);
     
-    if (result) return std::string(resolved_path);
-    else return path;
+    //if (result) return std::string(resolved_path);
+    //else 
+    return path;
 #endif 
 }
