@@ -1526,8 +1526,9 @@ void SceneView::draw()
         GLenum errorNo = glGetError();
         if (errorNo!=GL_NO_ERROR)
         {
-            osg::notify(WARN)<<"Warning: detected OpenGL error '"<<gluErrorString(errorNo)<<"'"<< std::endl;
-
+            //osg::notify(WARN)<<"Warning: detected OpenGL error '"<<gluErrorString(errorNo)<<"'"<< std::endl;
+            osg::notify(osg::WARN)<<"Warning: detected OpenGL errorNo= 0x"<<std::hex<<errorNo<<" SceneView::draw()"<<std::endl;
+                        
             // go into debug mode of OGL error in a fine grained way to help
             // track down OpenGL errors.
             state->setCheckForGLErrors(osg::State::ONCE_PER_ATTRIBUTE);

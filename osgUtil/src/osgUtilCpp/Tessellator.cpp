@@ -90,8 +90,8 @@ void Tessellator::endTessellation()
         
         if (_errorCode!=0)
         {
-           const GLubyte *estring = gluErrorString((GLenum)_errorCode);
-           osg::notify(osg::WARN)<<"Tessellation Error: "<<estring<< std::endl;
+           //const GLubyte *estring = gluErrorString((GLenum)_errorCode);
+           osg::notify(osg::WARN)<<"Tessellation Error: endTessellation()"<<_errorCode<< std::endl;
         }
     }
 }
