@@ -1,0 +1,59 @@
+/* -*-c++-*- */
+/* osgEarth - Dynamic map generation toolkit for OpenSceneGraph
+ * Copyright 2008-2009 Pelican Ventures, Inc.
+ * http://osgearth.org
+ *
+ * osgEarth is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ */
+
+#ifndef OSGEARTH_TILE_SOURCE_FACTORY_H
+#define OSGEARTH_TILE_SOURCE_FACTORY_H 1
+
+#include <osgEarth/Export>
+#include <osgEarth/Common>
+#include <osgEarth/MapLayer>
+#include <osgEarth/Map>
+#include <osgEarth/TileSource>
+
+namespace osgEarth
+{
+    /**
+     * Creates TileSource instances and chains them together to create
+     * tile source "pipelines" for data access and processing.
+     */
+    class TileSourceFactory
+    {
+    public:
+        /**
+        * Creates a new TileSource for use in a osgEarth Map. This is an internal method;
+        * don't call from outside the osgEarth library.
+        * TODO: make this package-internal scope 
+        */
+        TileSource* createMapTileSource( MapLayer* layer, Map* map );
+
+        /**
+        * Creates a new TileSource that can be used outside the osgEarth Map framework, providing 
+        * direct access to back-end data sources. The object will handle all image reprojection,
+        * cropping, etc automatically.
+        */
+        TileSource* createDirectReadTileSource(
+            MapLayer* layer,
+            //const SourceConfig& source_conf,
+            const Profile* profile,
+            unsigned int tileSize =256,
+            const osgDB::ReaderWriter::Options* global_options =NULL );
+    };
+}
+
+#endif // OSGEARTH_TILE_SOURCE_FACTORY

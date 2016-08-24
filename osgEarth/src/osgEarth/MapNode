@@ -1,0 +1,181 @@
+/* -*-c++-*- */
+/* osgEarth - Dynamic map generation toolkit for OpenSceneGraph
+* Copyright 2008-2009 Pelican Ventures, Inc.
+* http://osgearth.org
+*
+* osgEarth is free software; you can redistribute it and/or modify
+* it under the terms of the GNU Lesser General Public License as published by
+* the Free Software Foundation; either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU Lesser General Public License for more details.
+*
+* You should have received a copy of the GNU Lesser General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>
+*/
+
+#ifndef OSGEARTH_MAPNODE_H
+#define OSGEARTH_MAPNODE_H 1
+
+#include <osgEarth/Common>
+#include <osgEarth/Map>
+#include <osgEarth/MapLayer>
+#include <osgEarth/MapEngine>
+#include <osgEarth/MapEngineProperties>
+#include <osgEarth/EarthTerrain>
+#include <osgDB/ReaderWriter>
+#include <osg/CoordinateSystemNode>
+#include <ReentrantMutex>
+
+namespace osgEarth
+{
+    class OSGEARTH_EXPORT MapNode : public osg::Group //, public MapCallback
+    {
+    public:
+        /**
+         * Creates an empty map node.
+         */
+        MapNode();
+
+        /**
+         * Creates an empty map node.
+         * 
+         * @param props
+         *      Tile creation and rendering properties
+         */
+        MapNode( const MapEngineProperties& props );
+
+        /**
+         * Creates a new map node.
+         *
+         * @param map
+         *      Map data that this map node will render.
+         */
+        MapNode( Map* map );
+
+        /**
+         * Creates a new map node.
+         *
+         * @param map
+         *      Map data that this map node will render.
+         * @param props
+         *      Tile creation and rendering properties
+         */
+        MapNode( Map* map, const MapEngineProperties& props );
+
+    public:
+
+        /**
+         * Gets the Map that this MapNode is rendering.
+         */
+        Map* getMap();
+
+        /**
+         * Finds the topmost Map node in the specified scene graph, or returns NULL if
+         * no Map node exists in the graph.
+         *
+         * @param graph
+         *      Node graph in which to search for a MapNode
+         */
+        static MapNode* findMapNode( osg::Node* graph );
+
+        /**
+         * Finds the topmost CSN in the specified scene graph, or returns NULL if no 
+         * CSN exists in the graph.
+         *
+         * @param graph
+         *      Node graph in which to search for a CSN.
+         */
+        static osg::CoordinateSystemNode* findCoordinateSystemNode( osg::Node* graph );        
+
+        /**
+         * Returns true if the realized terrain model is geocentric, false if
+         * it is flat/projected.
+         */
+        bool isGeocentric() const;
+
+        /**
+         * Gets the underlying map engine that generates data for this map node.
+         */
+        MapEngine* getEngine() const;
+
+        /**
+         * Gets the number of terrains that this MapNode is managing
+         */
+        unsigned int getNumTerrains() const;
+
+        /**
+         * Gets one of the terrains in this map node.
+         */
+        EarthTerrain* getTerrain( unsigned int i ) const;
+
+        /**
+         * Gets the ID for this MapNode
+         */
+        unsigned int getId() const;
+
+        /**
+         * Gets a registered MapNode by its unique ID.
+         */
+        static MapNode* getMapNodeById(unsigned int id);
+
+
+    public: // MapCallback
+
+        void onMapProfileEstablished( const Profile* profile );
+
+        void onMapLayerAdded( MapLayer*, unsigned int index );
+
+        void onMapLayerRemoved( MapLayer* layer, unsigned int index );
+
+        void onMapLayerMoved( MapLayer* layer, unsigned int oldIndex, unsigned int newIndex );
+
+
+    protected:        
+        virtual ~MapNode();
+
+        virtual osg::CoordinateSystemNode* createCoordinateSystemNode() const;
+
+        //Registers the given MapNode with osgEarth.  This should not be called by user code
+        static void registerMapNode( MapNode* mapNode );
+
+        //Unregisters the given MapNode.  This should not be called by user code
+        static void unregisterMapNode( unsigned int id );
+
+    private:
+
+        unsigned int _id;
+
+        TileSource* installTileSource( MapLayer* layer );
+
+        osg::ref_ptr<MapEngine> _engine;
+
+        void updateStateSet();
+
+        osg::ref_ptr<Map> _map;
+
+        MapEngineProperties _engineProps;
+
+        //Use observer_ptr so the Map does not prevent the main scene graph from being deleted
+        typedef std::vector< osg::observer_ptr<osgEarth::EarthTerrain> > TerrainVec;
+        TerrainVec _terrains;
+
+        static OpenThreads::ReentrantMutex s_mapNodeCacheMutex;
+
+        //osg::ref_ptr< SourceCallback > _sourceCallback;
+
+        void init();
+        
+        void addImageTileSource( TileSource* source );
+        void addHeightFieldTileSource( TileSource* source );
+        void removeImageTileSource( unsigned int index );
+        void removeHeightFieldTileSource( unsigned int index );
+        void moveImageTileSource( unsigned int oldIndex, unsigned int newIndex );
+        void moveHeightFieldTileSource( unsigned int oldIndex, unsigned int newIndex );
+    };
+}
+
+#endif // OSGEARTH_MAPNODE_H

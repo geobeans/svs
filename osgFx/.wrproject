@@ -12,525 +12,1166 @@
             <stringAttribute key="BLD::Info|GlobalMacro|EXPAND_DBG" value="0"/>
             <stringAttribute key="BLD::Info|GlobalMacro|PROJECT_TYPE" value="DKM"/>
             <listAttribute key="BLD::Info|Incl|ARMARCH4diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH4diabbe">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH4gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH4gnube">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH5diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH5diabbe">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH5gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH5gnube">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH6diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH6diab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH6diabbe">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH6diabbe_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH6gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH6gnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH6gnube">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH6gnube_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH7diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH7diabbe">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH7gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|ARMARCH7gnube">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MCF5200sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MCF5400diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MCF5400sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI2sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI2sfdiable">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI2sfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI2sfgnule">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2diab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2diable">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2diable_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2gnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2gnule">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2gnule_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2sfdiab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2sfdiable">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2sfdiable_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2sfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2sfgnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2sfgnule">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32R2sfgnule_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32sfdiable">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32sfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI32sfgnule">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI3diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI3diable">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI3gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI3gnule">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64R2sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64R2sfdiab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64R2sfdiable">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64R2sfdiable_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64R2sfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64R2sfgnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64R2sfgnule">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64R2sfgnule_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64diab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64diable">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64diable_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64gnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64gnule">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64gnule_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64sfdiab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64sfdiable">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64sfdiable_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64sfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64sfgnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64sfgnule">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|MIPSI64sfgnule_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUM2diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUM2gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUM3diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUM3gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUM4diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUM4diab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUM4gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUM4gnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUMdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PENTIUMgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32diab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32e500v2diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32e500v2diab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32e500v2gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32e500v2gnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32gnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32sfdiab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32sfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC32sfgnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC403diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC403gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC405diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC405gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC405sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC405sfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC440diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC440gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC440sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC440sfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC603diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC603gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC604diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC604gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC85XXdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC85XXe500v2diab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC85XXe500v2gnu">
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
                 <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
                 <stringAttribute value="-I%Proj-osg%/src"/>
                 <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
-                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
-                <stringAttribute value="-I%Proj-curl%/include"/>
+                <stringAttribute value="-I%Proj-osgUtil%/src"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC85XXgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC85XXsfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC85XXsfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC860sfdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC860sfgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|SIMLINUXdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|SIMLINUXgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|SIMNTdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|SIMNTdiab_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|SIMNTgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|SIMNTgnu_SMP">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|XSCALEdiab">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|XSCALEdiabbe">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|XSCALEgnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|XSCALEgnube">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
                 <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I%Proj-osgDB%/src"/>
+                <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Macros">
                 <stringAttribute value="VX_CPU_FAMILY"/>
@@ -6128,9 +6769,9 @@
         </mapAttribute>
     </attributes>
     <buildtargets>
-        <buildtarget buildtool="Librarian" name="osgUtil" passed="true" targetname="osgUtil">
+        <buildtarget buildtool="Librarian" name="osgFx" passed="false" targetname="osgFx">
             <contents>
-                <folder name="/osgUtil" recursive="true"/>
+                <folder name="/osgFx" recursive="true"/>
             </contents>
         </buildtarget>
     </buildtargets>
