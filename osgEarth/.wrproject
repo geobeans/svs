@@ -8,7 +8,7 @@
                 <stringAttribute value="DEFINES"/>
                 <stringAttribute value="EXPAND_DBG"/>
             </listAttribute>
-            <stringAttribute key="BLD::Info|GlobalMacro|DEFINES" value="-D_VxWorks_68_Evn_ -DOT_LIBRARY_STATIC -DOSG_LIBRARY_STATIC -DOSGEARTH_LIBRARY_STATIC -DXML_STATIC -DCURL_STATICLIB -DXML_STATIC"/>
+            <stringAttribute key="BLD::Info|GlobalMacro|DEFINES" value="-D_VxWorks_68_Evn_ -D__ppc__ -DOT_LIBRARY_STATIC -DOSG_LIBRARY_STATIC -DOSGEARTH_LIBRARY_STATIC -DXML_STATIC -DCURL_STATICLIB -DXML_STATIC"/>
             <stringAttribute key="BLD::Info|GlobalMacro|EXPAND_DBG" value="0"/>
             <stringAttribute key="BLD::Info|GlobalMacro|PROJECT_TYPE" value="DKM"/>
             <listAttribute key="BLD::Info|Incl|ARMARCH4diab">

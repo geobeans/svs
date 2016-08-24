@@ -74,10 +74,11 @@
 /*
  * Verify that some macros are actually defined.
  */
-//#ifndef CURL_SIZEOF_LONG
-//#  error "CURL_SIZEOF_LONG definition is missing!"
-//   Error Compilation_aborted_CURL_SIZEOF_LONG_is_missing
-//#endif
+
+#ifndef CURL_SIZEOF_LONG
+#  error "CURL_SIZEOF_LONG definition is missing!"
+   Error Compilation_aborted_CURL_SIZEOF_LONG_is_missing
+#endif
 
 #ifndef CURL_TYPEOF_CURL_SOCKLEN_T
 #  error "CURL_TYPEOF_CURL_SOCKLEN_T definition is missing!"
@@ -89,40 +90,40 @@
    Error Compilation_aborted_CURL_SIZEOF_CURL_SOCKLEN_T_is_missing
 #endif
 
-//#ifndef CURL_TYPEOF_CURL_OFF_T
-//#  error "CURL_TYPEOF_CURL_OFF_T definition is missing!"
-//   Error Compilation_aborted_CURL_TYPEOF_CURL_OFF_T_is_missing
-//#endif
-//
-//#ifndef CURL_FORMAT_CURL_OFF_T
-//#  error "CURL_FORMAT_CURL_OFF_T definition is missing!"
-//   Error Compilation_aborted_CURL_FORMAT_CURL_OFF_T_is_missing
-//#endif
-//
-//#ifndef CURL_FORMAT_CURL_OFF_TU
-//#  error "CURL_FORMAT_CURL_OFF_TU definition is missing!"
-//   Error Compilation_aborted_CURL_FORMAT_CURL_OFF_TU_is_missing
-//#endif
-//
-//#ifndef CURL_FORMAT_OFF_T
-//#  error "CURL_FORMAT_OFF_T definition is missing!"
-//   Error Compilation_aborted_CURL_FORMAT_OFF_T_is_missing
-//#endif
-//
-//#ifndef CURL_SIZEOF_CURL_OFF_T
-//#  error "CURL_SIZEOF_CURL_OFF_T definition is missing!"
-//   Error Compilation_aborted_CURL_SIZEOF_CURL_OFF_T_is_missing
-//#endif
-//
-//#ifndef CURL_SUFFIX_CURL_OFF_T
-//#  error "CURL_SUFFIX_CURL_OFF_T definition is missing!"
-//   Error Compilation_aborted_CURL_SUFFIX_CURL_OFF_T_is_missing
-//#endif
-//
-//#ifndef CURL_SUFFIX_CURL_OFF_TU
-//#  error "CURL_SUFFIX_CURL_OFF_TU definition is missing!"
-//   Error Compilation_aborted_CURL_SUFFIX_CURL_OFF_TU_is_missing
-//#endif
+#ifndef CURL_TYPEOF_CURL_OFF_T
+#  error "CURL_TYPEOF_CURL_OFF_T definition is missing!"
+   Error Compilation_aborted_CURL_TYPEOF_CURL_OFF_T_is_missing
+#endif
+
+#ifndef CURL_FORMAT_CURL_OFF_T
+#  error "CURL_FORMAT_CURL_OFF_T definition is missing!"
+   Error Compilation_aborted_CURL_FORMAT_CURL_OFF_T_is_missing
+#endif
+
+#ifndef CURL_FORMAT_CURL_OFF_TU
+#  error "CURL_FORMAT_CURL_OFF_TU definition is missing!"
+   Error Compilation_aborted_CURL_FORMAT_CURL_OFF_TU_is_missing
+#endif
+
+#ifndef CURL_FORMAT_OFF_T
+#  error "CURL_FORMAT_OFF_T definition is missing!"
+   Error Compilation_aborted_CURL_FORMAT_OFF_T_is_missing
+#endif
+
+#ifndef CURL_SIZEOF_CURL_OFF_T
+#  error "CURL_SIZEOF_CURL_OFF_T definition is missing!"
+   Error Compilation_aborted_CURL_SIZEOF_CURL_OFF_T_is_missing
+#endif
+
+#ifndef CURL_SUFFIX_CURL_OFF_T
+#  error "CURL_SUFFIX_CURL_OFF_T definition is missing!"
+   Error Compilation_aborted_CURL_SUFFIX_CURL_OFF_T_is_missing
+#endif
+
+#ifndef CURL_SUFFIX_CURL_OFF_TU
+#  error "CURL_SUFFIX_CURL_OFF_TU definition is missing!"
+   Error Compilation_aborted_CURL_SUFFIX_CURL_OFF_TU_is_missing
+#endif
 
 /*
  * Macros private to this header file.
