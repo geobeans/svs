@@ -1368,16 +1368,16 @@
                 <stringAttribute value="-I$(WIND_BASE)/target/h"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC85XXe500v2gnu">
-                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
-                <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
-                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
-                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
                 <stringAttribute value="-I%Proj-osgGA%/src"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h/wrn/coreip"/>
                 <stringAttribute value="-I%Proj-osgText%/src"/>
                 <stringAttribute value="-I%Proj-osgDB%/src"/>
                 <stringAttribute value="-I%Proj-osgUtil%/src"/>
-                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
                 <stringAttribute value="-I%Proj-osg%/src"/>
+                <stringAttribute value="-I$(PRJ_ROOT_DIR)/src"/>
+                <stringAttribute value="-I%Proj-openthreads%/src/include"/>
+                <stringAttribute value="-I$(OGL_LIBPATH)/include"/>
+                <stringAttribute value="-I$(WIND_BASE)/target/h"/>
             </listAttribute>
             <listAttribute key="BLD::Info|Incl|PPC85XXgnu">
                 <stringAttribute value="-I%Proj-osgGA%/src"/>
