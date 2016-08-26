@@ -1,0 +1,8 @@
+#Thu Aug 25 16:59:07 CST 2016
+File\ to\ store\ coverage\ data\ (on\ target)\:\ =/tmp/WRSCoverageData
+Increase\ file\ size\ in\ increments\ of\:\ =32
+Initial\ size\ of\ file\:\ =32
+Block\ Coverage=true
+EnableCoverage=2
+Function\ Coverage=true
+Apply\ coverage\ to\ inlined\ functions\ that\ are\ in\ the\ source\ code\ file.=true

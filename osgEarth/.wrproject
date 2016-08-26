@@ -4412,7 +4412,7 @@
             <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|PPC604gnu" value="$(CC_ARCH_SPEC) -ansi -Wall   -MD -MP"/>
             <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|PPC85XXdiab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xforce-declarations   -Xmake-dependency=0xd"/>
             <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|PPC85XXe500v2diab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xforce-declarations   -Xmake-dependency=0xd"/>
-            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|PPC85XXe500v2gnu" value="$(CC_ARCH_SPEC) -ansi -Wall   -MD -MP"/>
+            <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|PPC85XXe500v2gnu" value="$(CC_ARCH_SPEC) -ansi -Wall   -MD -MP -ffunction-sections"/>
             <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|PPC85XXgnu" value="$(CC_ARCH_SPEC) -ansi -Wall   -MD -MP"/>
             <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|PPC85XXsfdiab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xforce-declarations   -Xmake-dependency=0xd"/>
             <stringAttribute key="BLD::Info|Tool|C++-Compiler|flags|PPC85XXsfgnu" value="$(CC_ARCH_SPEC) -ansi -Wall   -MD -MP"/>
@@ -5060,7 +5060,7 @@
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC604gnu" value="$(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXdiab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xforce-declarations   -Xmake-dependency=0xd"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXe500v2diab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xforce-declarations   -Xmake-dependency=0xd"/>
-            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXe500v2gnu" value="$(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXe500v2gnu" value="$(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP -ffunction-sections"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXgnu" value="$(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXsfdiab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xforce-declarations   -Xmake-dependency=0xd"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXsfgnu" value="$(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP"/>

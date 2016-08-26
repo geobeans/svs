@@ -64,7 +64,7 @@ IDE_LIBRARIES =
 
 #BuildTool flags
 ifeq ($(DEBUG_MODE),1)
-DEBUGFLAGS_C-Compiler = -g
+DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
 DEBUGFLAGS_C++-Compiler = -g
 DEBUGFLAGS_Linker = -g
 DEBUGFLAGS_Partial-Image-Linker = 
@@ -88,7 +88,7 @@ PROJECT_TARGETS = osgUtil/$(MODE_DIR)/osgUtil.a
 
 # osgUtil
 ifeq ($(DEBUG_MODE),1)
-osgUtil/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -g
+osgUtil/$(MODE_DIR)/% : DEBUGFLAGS_C-Compiler = -O2 -fstrength-reduce -fno-builtin
 osgUtil/$(MODE_DIR)/% : DEBUGFLAGS_C++-Compiler = -g
 osgUtil/$(MODE_DIR)/% : DEBUGFLAGS_Linker = -g
 osgUtil/$(MODE_DIR)/% : DEBUGFLAGS_Partial-Image-Linker = 
@@ -120,43 +120,7 @@ osgUtil/$(MODE_DIR)/% : LIBS =
 osgUtil/$(MODE_DIR)/% : OGL_LIBPATH = $(WIND_BASE)/target/config/xes864xE/argus
 osgUtil/$(MODE_DIR)/% : OBJ_DIR := osgUtil/$(MODE_DIR)
 
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/CubeMapGenerator.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/CubeMapGenerator.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/CullVisitor.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/CullVisitor.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/DelaunayTriangulator.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/DelaunayTriangulator.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/DisplayRequirementsVisitor.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/DisplayRequirementsVisitor.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/DrawElementTypeSimplifier.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/DrawElementTypeSimplifier.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/EdgeCollector.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/EdgeCollector.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/GLObjectsVisitor.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/GLObjectsVisitor.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/HalfWayMapGenerator.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/HalfWayMapGenerator.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/HighlightMapGenerator.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/HighlightMapGenerator.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/IntersectVisitor.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/IntersectVisitor.cpp
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -169,14 +133,6 @@ osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/LineSegmentIntersector.o : $(
 
 
 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Optimizer.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/Optimizer.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/PlaneIntersector.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/PlaneIntersector.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/PolytopeIntersector.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/PolytopeIntersector.cpp
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -196,19 +152,7 @@ osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderStage.o : $(PRJ_ROOT_DI
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
 
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/ReversePrimitiveFunctor.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/ReversePrimitiveFunctor.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SceneGraphBuilder.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/SceneGraphBuilder.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SceneView.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/SceneView.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Simplifier.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/Simplifier.cpp
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -224,19 +168,11 @@ osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Statistics.o : $(PRJ_ROOT_DIR
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
 
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TangentSpaceGenerator.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/TangentSpaceGenerator.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Tessellator.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/Tessellator.cpp
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
 
 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TransformAttributeFunctor.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/TransformAttributeFunctor.cpp
-	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
-
-
-osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TransformCallback.o : $(PRJ_ROOT_DIR)/src/osgUtilCpp/TransformCallback.cpp
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
 
@@ -256,36 +192,20 @@ osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Version.o : $(PRJ_ROOT_DIR)/s
 	$(TRACE_FLAG)if [ ! -d "`dirname "$@"`" ]; then mkdir -p "`dirname "$@"`"; fi;echo "building $@"; $(TOOL_PATH)ccppc $(DEBUGFLAGS_C++-Compiler) $(CC_ARCH_SPEC) -ansi -Wall   -MD -MP $(ADDED_C++FLAGS) $(IDE_INCLUDES) $(ADDED_INCLUDES) -DCPU=$(CPU) -DTOOL_FAMILY=$(TOOL_FAMILY) -DTOOL=$(TOOL) -D_WRS_KERNEL  -D_VSB_CONFIG_FILE=\"$(VSB_CONFIG_FILE)\"   $(DEFINES) -o "$@" -c "$<"
 
 
-OBJECTS_osgUtil = osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/CubeMapGenerator.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/CullVisitor.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/DelaunayTriangulator.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/DisplayRequirementsVisitor.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/DrawElementTypeSimplifier.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/EdgeCollector.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/GLObjectsVisitor.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/HalfWayMapGenerator.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/HighlightMapGenerator.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/IntersectVisitor.o \
+OBJECTS_osgUtil = osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/CullVisitor.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/IntersectionVisitor.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/LineSegmentIntersector.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Optimizer.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/PlaneIntersector.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/PolytopeIntersector.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/PositionalStateContainer.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderBin.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderLeaf.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderStage.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/ReversePrimitiveFunctor.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SceneGraphBuilder.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SceneView.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Simplifier.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SmoothingVisitor.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/StateGraph.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Statistics.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TangentSpaceGenerator.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Tessellator.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TransformAttributeFunctor.o \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TransformCallback.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TriStripVisitor.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TriStrip_tri_stripper.o \
 	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/UpdateVisitor.o \
@@ -301,18 +221,12 @@ _clean :: osgUtil/$(MODE_DIR)/osgUtil_clean
 osgUtil/$(MODE_DIR)/osgUtil_clean : 
 	$(TRACE_FLAG)if [ -d "osgUtil" ]; then cd "osgUtil"; rm -rf $(MODE_DIR); fi
 
-DEP_FILES := osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/CubeMapGenerator.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/CullVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/DelaunayTriangulator.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/DisplayRequirementsVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/DrawElementTypeSimplifier.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/EdgeCollector.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/GLObjectsVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/HalfWayMapGenerator.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/HighlightMapGenerator.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/IntersectVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/IntersectionVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/LineSegmentIntersector.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Optimizer.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/PlaneIntersector.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/PolytopeIntersector.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/PositionalStateContainer.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderBin.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderLeaf.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderStage.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/ReversePrimitiveFunctor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SceneGraphBuilder.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SceneView.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Simplifier.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SmoothingVisitor.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/StateGraph.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Statistics.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TangentSpaceGenerator.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Tessellator.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TransformAttributeFunctor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TransformCallback.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TriStripVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TriStrip_tri_stripper.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/UpdateVisitor.d \
-	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Version.d
+DEP_FILES := osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/CullVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/IntersectionVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/LineSegmentIntersector.d \
+	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Optimizer.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/PositionalStateContainer.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderBin.d \
+	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderLeaf.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/RenderStage.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SceneView.d \
+	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/SmoothingVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/StateGraph.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Statistics.d \
+	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Tessellator.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TransformAttributeFunctor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TriStripVisitor.d \
+	 osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/TriStrip_tri_stripper.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/UpdateVisitor.d osgUtil/$(MODE_DIR)/Objects/osgUtil/src/osgUtilCpp/Version.d
 -include $(DEP_FILES)
 
 

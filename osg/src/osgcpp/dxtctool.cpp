@@ -1,6 +1,6 @@
 // dxtctool.cpp: implementation of DXTC Tools functions.
 // 
-// Copyright (C) 2002 Tanguy Fautré.
+// Copyright (C) 2002 Tanguy Fautr?
 // For conditions of distribution and use,
 // see copyright notice in dxtctool.h
 //

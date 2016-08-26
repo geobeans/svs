@@ -3510,7 +3510,7 @@
             <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|PPC604gnu" value="-g"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|PPC85XXdiab" value="-g"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|PPC85XXe500v2diab" value="-g"/>
-            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|PPC85XXe500v2gnu" value="-g"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|PPC85XXe500v2gnu" value="-O2 -fstrength-reduce -fno-builtin"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|PPC85XXgnu" value="-g"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|PPC85XXsfdiab" value="-g"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|dbgFlags|PPC85XXsfgnu" value="-g"/>
@@ -3768,7 +3768,7 @@
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC604gnu" value="$(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXdiab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xforce-declarations   -Xmake-dependency=0xd"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXe500v2diab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xforce-declarations   -Xmake-dependency=0xd"/>
-            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXe500v2gnu" value="$(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP"/>
+            <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXe500v2gnu" value="$(CC_ARCH_SPEC) -ansi -Wall -MD -MP -g0 -Os"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXgnu" value="$(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXsfdiab" value="$(CC_ARCH_SPEC) -W:c:,-Xclib-optim-off -Xansi -Xlocal-data-area-static-only -Xforce-declarations   -Xmake-dependency=0xd"/>
             <stringAttribute key="BLD::Info|Tool|C-Compiler|flags|PPC85XXsfgnu" value="$(CC_ARCH_SPEC) -ansi  -Wall   -MD -MP"/>
